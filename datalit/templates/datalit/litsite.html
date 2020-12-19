@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'datalit/style.css'%}" %}> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>literature data</title>
+</head>
+<body>
+    <form action="" method="">
+        {% csrf_token %}
+        <textarea name="litext" placeholder="enter a literature text"></textarea>
+        <button type="submit">go</button>
+    </form>
+
+    <p>total word count: {{wcount}} </p>
+    <p>number of paragraphs: {{pcount}} </p>
+    <p>most common words: </p>
+    <ul>
+    {% for word in comlist %}
+    <li>{{ word }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

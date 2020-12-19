@@ -1,0 +1,32 @@
+* {
+    background-color: #e5c8ff;
+    color: #2d004a;
+    font-family: 'Courier New', Courier, monospace;
+    border-width: 1px;
+}
+
+body {
+    text-shadow: 5px 5px 10px #ffffff, 5px 5px 5px #8800ff;
+}
+
+button {
+    background-color: #ffccf7;
+    min-width: 91vw;
+    min-height: 3vh;
+    margin: 5vw;
+    margin-top: 0vw;
+}
+
+textarea {
+    background-color: #c8d5ff;
+    min-width: 90vw;
+    min-height: 10vh;
+    margin: 5vw;
+    margin-bottom: 0vw;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+p, ul {
+    margin-left: 5vw;
+}
